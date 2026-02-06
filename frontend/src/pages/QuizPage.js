@@ -89,7 +89,7 @@ const QuizPage = () => {
     
     addQuizResult(quizResult);
     
-    if (!profile.level || currentQuiz.type === 'mixed') {
+    if (!profile || !profile.level || currentQuiz.type === 'mixed') {
       const level = classifyStudentLevel(finalScore);
       updateStudentProfile({ level });
     }
