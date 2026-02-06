@@ -36,7 +36,7 @@ const MLResultPage = () => {
     }
   };
   
-  const levelColors = getLevelColor(profile.level);
+  const levelColors = getLevelColor(profile?.level);
   
   const getRecommendations = () => {
     if (quizResult.score < 40) {
